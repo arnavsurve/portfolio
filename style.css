@@ -11,6 +11,12 @@ body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
+main {
+  position: relative;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
 #vanta {
   z-index: -1;
   position: absolute;

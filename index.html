@@ -22,100 +22,98 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
     <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      VANTA.TOPOLOGY({
-        el: "#vanta",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 500.00,
-        minWidth: 200.00,
-        scale: 2.00,
-        scaleMobile: 1.00,
-        color: 0x91c4ff,
-        backgroundColor: 0x404040
-      })
-    })
+      window.addEventListener('DOMContentLoaded', () => {
+        VANTA.TOPOLOGY({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 500.00,
+          minWidth: 200.00,
+          scale: 2.00,
+          scaleMobile: 1.00,
+          color: 0x91c4ff,
+          backgroundColor: 0x404040
+        })
 
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+        }, 800);
+      });
     </script>
 
     <div id="vanta"></div>
-
-    <header>
-      <div class="container heading neumorphic">
-        <h1>Arnav Surve</h1>
-        <h3>First Year Cybersecurity Student @ Purdue University</h3>
-        <div class="container d-flex justify-content-center socials">
-          <ul>
-            <li>
-              <a href="https://github.com/arnavsurve">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/arnav-surve-27177918a/">
-                <i class="fa-brands fa-linkedin"></i>
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="https://www.hackerrank.com/arnavsurve">
-                <i class="fa-brands fa-hackerrank"></i>
-                HackerRank
-              </a>
-            </li>
-          </ul>
+    <main>
+      <header>
+        <div class="container heading neumorphic">
+          <h1>Arnav Surve</h1>
+          <h3>First Year Cybersecurity Student @ Purdue University</h3>
+          <div class="container d-flex justify-content-center socials">
+            <ul>
+              <li>
+                <a href="https://github.com/arnavsurve">
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/arnav-surve-27177918a/">
+                  <i class="fa-brands fa-linkedin"></i>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.hackerrank.com/arnavsurve">
+                  <i class="fa-brands fa-hackerrank"></i>
+                  HackerRank
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </header>
+      <div class="container d-flex justify-content-center bottom-buttons">
+        <nav class="navbar navbar-expand">
+            <div class="navbar-nav">
+              <a id="content-nav" class="navbar-brand mb-0 neumorphic active" role="button" data-toggle="collapse" href="#about">About</a>
+              <a id="content-nav" class="navbar-brand mb-0 neumorphic" href="#work">Work</a>
+              <a id="content-nav" class="navbar-brand mb-0 neumorphic" href="#contact">Contact</a>
+            </div>
+        </nav>
       </div>
-    </header>
-
-    <div class="container d-flex justify-content-center bottom-buttons">
-      <nav class="navbar navbar-expand">
-          <div class="navbar-nav">
-            <a id="content-nav" class="navbar-brand mb-0 neumorphic active" role="button" data-toggle="collapse" href="#about">About</a>
-            <a id="content-nav" class="navbar-brand mb-0 neumorphic" href="#work">Work</a>
-            <a id="content-nav" class="navbar-brand mb-0 neumorphic" href="#contact">Contact</a>
+      <div>
+        <article id="about" class="container neumorphic">
+          <div class="flex content">
+            <h2>About</h2>
+            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
           </div>
-      </nav>
-    </div>
-
-    <div>
-      <article id="about" class="container neumorphic">
-        <div class="flex content">
-          <h2>About</h2>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-        </div>
-      </article>
-
-      <article id="work" class="container neumorphic">
-        <div class="flex content">
-          <h2>Work</h2>
-
-          <div class="container works">
-            <a href="https://arnavsurve.github.io/landing-page/">
-              <img src="src/landingpage.png"/>
-            </a>
+        </article>
+        <article id="work" class="container neumorphic">
+          <div class="flex content">
+            <h2>Work</h2>
+            <div class="container works">
+              <a href="https://arnavsurve.github.io/landing-page/">
+                <img src="src/landingpage.png"/>
+              </a>
+            </div>
+            <div class="container works">
+              <a href="https://arnavsurve.github.io/wikipedia-search/">
+                <img src="src/wikisearch.png">
+              </a>
+            </div>
           </div>
-
-          <div class="container works">
-            <a href="https://arnavsurve.github.io/wikipedia-search/">
-              <img src="src/wikisearch.png">
-            </a>
+        </article>
+        <article id="contact" class="container neumorphic">
+          <div class="flex content">
+            <h2>Contact</h2>
+            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
           </div>
-
-        </div>
-      </article>
-
-      <article id="contact" class="container neumorphic">
-        <div class="flex content">
-          <h2>Contact</h2>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-        </div>
-      </article>
-    </div>
+        </article>
+      </div>
+    </main>
 
   </body>
 </html>
