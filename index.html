@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Arnav Surve</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/src/favicon_io/favicon.ico">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -12,7 +13,20 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5937404bf8.js" crossorigin="anonymous"></script>
+
+    <!-- Iconify Icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
   </head>
+
+  <!-- Google tag (gtag.js) for Google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K849ZGBWLE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K849ZGBWLE');
+  </script>
 
   <body>
     <!-- Bootstrap JavaScript Bundle with Popper -->
@@ -48,7 +62,7 @@
       <header>
         <div class="container heading neumorphic">
           <h1>Arnav Surve</h1>
-          <h3>First Year Cybersecurity Student @ Purdue University</h3>
+          <h3>First Year Cybersecurity @ Purdue University</h3>
           <div class="container d-flex justify-content-center socials">
             <ul>
               <li>
@@ -69,6 +83,12 @@
                   HackerRank
                 </a>
               </li>
+              <li>
+                <a href="https://leetcode.com/arnavsurve/">
+                  <iconify-icon inline icon="simple-icons:leetcode"></iconify-icon>
+                  Leetcode
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -86,30 +106,46 @@
         <article id="about" class="container neumorphic">
           <div class="flex content">
             <h2>About</h2>
-            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+            <p>Hi! I'm Arnav, a first-year cybersecurity student at Purdue. I have experience developing front-end and full-stack websites using HTML, CSS, JavaScript, React, Node.js, and Go.</p>
+            <p>I build hand-coded websites rather than using website builders like Wordpress and Wix so that websites load instantly and rank highly in Google's page rankings. Page builders have bloated and messy code, and are prone to hacking. Every line is coded with intention in order to maximize website speed and ranking in Google's search engine optimization algorithm, putting you ahead of businesses using template-based page builders. I focus on building responsive websites optimized for mobile, tablet, and desktop sizes so that users can access them from anywhere.</p>
           </div>
         </article>
         <article id="work" class="container neumorphic">
           <div class="flex content">
             <h2>Work</h2>
-            <div class="container works">
-              <a href="https://arnavsurve.github.io/landing-page/">
-                <img src="src/landingpage.png"/>
-              </a>
+
+            <div class="row">
+              <div class="container works">
+                <a href="https://arnavsurve.github.io/landing-page/">
+                  <img src="src/landingpage.png"/>
+                </a>
+              </div>
+              <div class="container works">
+                <a href="https://arnavsurve.github.io/wikipedia-search/">
+                  <img src="src/wikisearch.png">
+                </a>
+              </div>
+              <div class="container works">
+                <a href="https://arnavsurve.github.io/trump-quotes">
+                  <img src="src/trumpquotes.png">
+                </a>
+              </div>
             </div>
-            <div class="container works">
-              <a href="https://arnavsurve.github.io/wikipedia-search/">
-                <img src="src/wikisearch.png">
-              </a>
+
+            <div class="row">
+              <div class="container works">
+                <a href="https://arnavsurve.github.io/stopwatch">
+                  <img src="src/stopwatch.png">
+                </a>
+              </div>
             </div>
+
           </div>
         </article>
         <article id="contact" class="container neumorphic">
-          <div class="flex content">
+          <div class="flex content footer">
             <h2>Contact</h2>
-            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+            <p style="margin-bottom: 0;">You can contact me at arnavsurve@gmail.com or asurve@purdue.edu.</p>
           </div>
         </article>
       </div>
